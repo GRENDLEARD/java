@@ -1,0 +1,48 @@
+package ClasesYObjetos;
+
+
+public class galletas {
+    
+    String redvelvet;
+    String mantequilla;
+    String avena;
+    String rellenas; 
+    String atributos;
+   
+     public static void main(String[] args) {
+        galletas galleta1 = new galletas();
+        galleta1.redvelvet= " color regularmente rojo con chips de chocolate blanco o negro de forma circulada en su prefencia   ";
+        galleta1.atributos= " sabe a frutos rojos con vainillacon 142kcalpeso 27 g,Harina de trigoCacao en polvo Polvo de hornear Sal Mantequilla Azúcar granulado Azúcar moreno,Huevos ";
+        System.out.println("GALLETAS 1");
+       System.out.println(" si se te antoja una gallerta redvelvet ten encuenta las siguientes caracteristicas: "+galleta1.redvelvet);
+       System.out.println(" si se te antoja una gallerta redvelvet ten encuenta los siguientes atributos: "+galleta1.atributos);
+       
+       System.out.println("                                                           ");
+       
+        galletas galleta2 = new galletas();
+        galleta2.mantequilla= "  de forma circular con chispitas de chocolate o otro dulce de color cafe muy claro                                                                           ";
+        galleta2.atributos= "467 caloríassabor principal mantequilla peso 10 y 20 Azúcar:Harina de trigoHuevos: Los huevos Extracto de vainilla: Sal: Una pequeña cantidad            ";
+        System.out.println("GALLETAS 2");
+       System.out.println(" si se te antoja una gallerta mantquilla ten encuenta las siguientes caracteristicas: "+galleta2.mantequilla);
+       System.out.println(" si se te antoja una gallerta mantequilla ten encuentalos siguientes atributos: "+galleta2.atributos);
+       
+       System.out.println("                                                           ");
+       
+        galletas galleta3 = new galletas();
+        galleta3.avena= "  color oro,crocante,con semillas y mani, forma circular  ";
+        galleta3.atributos= "Ingredientes: Una lista de ingredientes que se utilizan para hacer la galleta de avena, como avena, mantequilla, azúcar, huevos, canela, pasas, nueces, etc";
+        System.out.println("GALLETAS 3");
+       System.out.println(" si se te antoja una gallerta de avena ten encuenta las siguientes caracteristicas: "+galleta3.avena);
+       System.out.println(" si se te antoja una gallerta de avena ten encuentalos siguientes atributos: "+galleta3.atributos);
+       System.out.println("                                                           ");
+       
+        galletas galleta4 = new galletas();
+        galleta4.rellenas= "  color cafe palido con mermelada de fresa o mora pequeñas y circuladas   ";
+        galleta4.atributos= " mantequilla azúcar2 huevos vainilla harina de trigo cacao en polvo sal bicarbonato de sodio";
+       System.out.println("GaLLETAS 4"); 
+       System.out.println(" si se te antoja una gallerta rellenas ten encuenta las siguientes caracteristicas: "+galleta3.rellenas);
+       System.out.println(" si se te antoja una gallerta rellenas ten encuentalos siguientes atributos: "+galleta3.atributos);
+       
+       
+     }
+}
