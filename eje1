@@ -1,0 +1,176 @@
+CARROS
+
+package poo;
+
+public class coche {
+    String color;
+    String marca;
+    int km;
+    String clasificacion;
+    
+        public static void main (String[]args){
+        coche coche1 = new coche();
+        coche1.color ="negro";
+        coche1.marca = "bogatti";
+        coche1.km = 420;
+        System.out.println("carro1");
+        System.out.println("                ");
+        System.out.println("el color del carro es: "+coche1.color);
+        System.out.println("el marca del carro es: "+coche1.marca);
+        System.out.println("el kilometraje del carro es: "+coche1.km);
+       
+        System.out.println("carro2");
+        System.out.println("                        ");
+        coche coche2 = new coche();
+        coche2.color ="blanco";
+        coche2.marca = "Audi";
+        coche2.km = 0;
+        System.out.println("el color del carro es: "+coche2.color);
+        System.out.println("el marca del carro es: "+coche2.marca);
+        System.out.println("el kilometraje del carro es: "+coche2.km);
+       
+        //*                                        //*
+        
+        
+        
+        System.out.println("carro3");
+        System.out.println("                        ");
+         coche coche3 = new coche();
+        coche3.color ="rojo";
+        coche3.marca = "ferrari";
+        coche3.km = 100;
+        System.out.println("el color del carro es: "+coche3.color);
+        System.out.println("el marca del carro es: "+coche3.marca);
+        System.out.println("el kilometraje del carro es: "+coche3.km);
+        System.out.println("clasificatoria deportivos");
+        
+        
+        }
+    
+    
+  
+}
+
+animales atributos y características 
+public class animal {
+    String especie;
+    String familia;
+    String caracteristicas;
+    String atributos;
+    
+        public static void main(String []args){
+        animal animal1= new animal();
+        animal1.familia="canidos";
+        animal1.especie= "lobo";
+        animal1.caracteristicas="grandes peludos nairces grandes patas cola orejas ojos ";
+        animal1.atributos="cazadores audases siempre estan en manada se pueden domesticar        carniboros ";
+        
+        System.out.println("el animal pertence a la familia de los: "+animal1.familia);                                             
+        System.out.println("el animal pertencece a especie: "+animal1.especie);
+        System.out.println("el animal tiene las siguientes caracteristicas: "+animal1.caracteristicas);
+        System.out.println("el animal tiene los siguientes atributos:  "+animal1.atributos);
+             
+        }
+           
+}
+
+medios de transporte
+package com.mycompany.transporte;
+
+public class Transporte {
+    
+    String trasmilenio;
+    String uber;
+    String moto;
+    String metrocable; 
+    String atributos;
+   
+     public static void main(String[] args) {
+        Transporte transporte1 = new Transporte();
+        transporte1.trasmilenio= " medio de transporte publico, color rojo con negro,forma rectangular,tiene tres bagones en grande, espacioso largo";
+        transporte1.atributos= "medio de trasporte publico de bajo costo financiero,largos recorridos ";
+        System.out.println("Medio de trasporte uno trasmilenio");
+       System.out.println("si vas a viajar en transmilenio ten encuenta las siguientes caracteristicas: "+transporte1.trasmilenio);
+       System.out.println("si vas a viajar en trasmilenio ten encuenta los siguientes atributos: "+transporte1.atributos);
+       
+       System.out.println("                                                           ");
+       
+       System.out.println("medio de trasporte dos uber ");
+        Transporte transporte2= new Transporte();
+        transporte2.uber= "carro particular de cualquier marca y modelo y color, medio de trasporte publico   ";
+        transporte2.atributos= "viajes de manera comoda con un costo medio/alto seguro ";
+        
+       System.out.println("si vas a viajar en uber ten encuenta las siguientes caracteristicas: "+transporte2.uber);
+       System.out.println("si vas a viajar en uber ten encuenta los siguientes atributos: "+transporte2.atributos);
+       
+        System.out.println("                                    ");
+        System.out.println("medio de trasporte tres moto ");
+        Transporte transporte3= new Transporte();
+        transporte3.moto= "moto particular de cualquier marca color y modelo   ";
+        transporte3.atributos= "eficaz en el tiempo, seguro,viaje de una manera cómoda,costo de financiero medio ";
+        
+       System.out.println("si vas a viajar en moto ten encuenta las siguientes caracteristicas: "+transporte3.moto);
+       System.out.println("si vas a viajar en moto ten encuenta los siguientes atributos: "+transporte3.atributos);
+                
+        
+        System.out.println("                                    ");
+        System.out.println("medio de trasporte cuatro metrocable ");
+        Transporte transporte4= new Transporte();
+        transporte4.metrocable= "  forma semi ovalado,color rojo con negro,no muy espacioso   trasporte publico,accesible para llegar a lugares muy lejanos      ";
+        transporte4.atributos= "  accesible para llegar a lugares muy lejanos viaje de una manera cómoda costo de financiero bajo";
+        
+       System.out.println("si vas a viajar en metrocable ten encuenta las siguientes caracteristicas: "+transporte4.metrocable);
+       System.out.println("si vas a viajar en metrocable ten encuenta los siguientes atributos: "+transporte4.metrocable);
+                
+         
+    }
+}
+
+fabrica de galletas 
+
+package com.mycompany.galletas;
+
+public class Galletas {
+    
+    String redvelvet;
+    String mantequilla;
+    String avena;
+    String rellenas; 
+    String atributos;
+   
+     public static void main(String[] args) {
+        Galletas galleta1 = new Galletas();
+        galleta1.redvelvet= " color regularmente rojo con chips de chocolate blanco o negro de forma circulada en su prefencia   ";
+        galleta1.atributos= " sabe a frutos rojos con vainillacon 142kcalpeso 27 g,Harina de trigoCacao en polvo Polvo de hornear Sal Mantequilla Azúcar granulado Azúcar moreno,Huevos ";
+        System.out.println("Galleta uno");
+       System.out.println("si se te antoja una gallerta redvelvet ten encuenta las siguientes caracteristicas: "+galleta1.redvelvet);
+       System.out.println(" si se te antoja una gallerta redvelvet ten encuenta los siguientes atributos: "+galleta1.atributos);
+       
+       System.out.println("                                                           ");
+       
+        Galletas galleta2 = new Galletas();
+        galleta2.mantequilla= "  de forma circular con chispitas de chocolate o otro dulce de color cafe muy claro                                                                           ";
+        galleta2.atributos= "467 caloríassabor principal mantequilla peso 10 y 20 Azúcar:Harina de trigoHuevos: Los huevos Extracto de vainilla: Sal: Una pequeña cantidad            ";
+        System.out.println("Galleta dos");
+       System.out.println("si se te antoja una gallerta mantquilla ten encuenta las siguientes caracteristicas: "+galleta2.mantequilla);
+       System.out.println("si se te antoja una gallerta mantequilla ten encuentalos siguientes atributos: "+galleta2.atributos);
+       
+       System.out.println("                                                           ");
+       Galletas galleta3 = new Galletas();
+        galleta3.avena= "  color oro,crocante,con semillas y mani, forma circular  ";
+        galleta3.atributos= "Ingredientes: Una lista de ingredientes que se utilizan para hacer la galleta de avena, como avena, mantequilla, azúcar, huevos, canela, pasas, nueces, etc";
+        System.out.println("Galleta tres");
+       System.out.println("si se te antoja una gallerta de avena ten encuenta las siguientes caracteristicas: "+galleta3.avena);
+       System.out.println("si se te antoja una gallerta de avena ten encuentalos siguientes atributos: "+galleta3.atributos);
+       System.out.println("                                                           ");
+       
+       Galletas galleta4 = new Galletas();
+        galleta4.rellenas= "  color cafe palido con mermelada de fresa o mora pequeñas y circuladas   ";
+        galleta4.atributos= " mantequilla azúcar2 huevos vainilla harina de trigo cacao en polvo sal bicarbonato de sodio";
+        System.out.println("Galleta cuatro"); 
+       System.out.println("si se te antoja una gallerta rellenas ten encuenta las siguientes caracteristicas: "+galleta3.rellenas);
+       System.out.println("si se te antoja una gallerta rellenas ten encuentalos siguientes atributos: "+galleta3.atributos);
+       
+       
+     }
+}
