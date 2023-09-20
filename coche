@@ -1,0 +1,57 @@
+package ClasesYObjetos;
+
+public class Coche {
+    String color;
+    String marca;
+    String km;
+    
+        public static void main (String[]args){
+        Coche coche1 = new Coche();
+        coche1.color ="negro";
+        coche1.marca = "bogatti";
+        coche1.km = ("42022");
+        
+         System.out.println("         ");
+        System.out.println("          COCHE 1          ");
+       
+        System.out.println("el color del carro es: "+coche1.color);
+        System.out.println("el marca del carro es: "+coche1.marca);
+        System.out.println("el kilometraje del carro es: "+coche1.km);
+       
+        
+        
+        
+        
+        System.out.println("  ");
+        System.out.println("           COCHE 2          ");
+   
+        Coche coche2 = new Coche();
+        coche2.color ="blanco";
+        coche2.marca = "Audi";
+        coche2.km = ("0");
+        System.out.println("el color del carro es: "+coche2.color);
+        System.out.println("el marca del carro es: "+coche2.marca);
+        System.out.println("el kilometraje del carro es: "+coche2.km);
+       
+        //*                                        //*
+        
+        
+        System.out.println("");
+        System.out.println("           COCHE 3          ");
+   
+        Coche coche3 = new Coche();
+        coche3.color ="rojo";
+        coche3.marca = "ferrari";
+        coche3.km = ("100");
+        System.out.println("el color del carro es: "+coche3.color);
+        System.out.println("el marca del carro es: "+coche3.marca);
+        System.out.println("el kilometraje del carro es: "+coche3.km);
+
+        
+        
+        
+        
+        }
+  
+}
+
