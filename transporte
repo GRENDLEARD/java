@@ -1,0 +1,52 @@
+package ClasesYObjetos;
+
+public class transporte {
+    
+    String trasmilenio;
+    String uber;
+    String moto;
+    String metrocable; 
+    String atributos;
+   
+     public static void main(String[] args) {
+        transporte transporte1 = new transporte();
+        transporte1.trasmilenio= " medio de transporte publico, color rojo con negro,forma rectangular,tiene tres bagones en grande, espacioso largo";
+        transporte1.atributos= "medio de trasporte publico de bajo costo financiero,largos recorridos ";
+        System.out.println("MEDIO DE TRANSPORTE 1 TRANSMILENIO");
+        System.out.println("si vas a viajar en transmilenio ten encuenta las siguientes caracteristicas: "+transporte1.trasmilenio);
+        System.out.println("si vas a viajar en trasmilenio ten encuenta los siguientes atributos: "+transporte1.atributos);
+       
+        System.out.println("                                                           ");
+       
+        System.out.println("MEDIO DE TRANSPORTE 2 ");
+        transporte transporte2= new transporte();
+        transporte2.uber= "carro particular de cualquier marca y modelo y color, medio de trasporte publico   ";
+        transporte2.atributos= "viajes de manera comoda con un costo medio/alto seguro ";
+        
+        System.out.println("si vas a viajar en uber ten encuenta las siguientes caracteristicas: "+transporte2.uber);
+        System.out.println("si vas a viajar en uber ten encuenta los siguientes atributos: "+transporte2.atributos);
+       
+        System.out.println("                                    ");
+        System.out.println("MEDIO DE TRANSPORTE 3 MOTO ");
+        transporte transporte3= new transporte();
+        transporte3.moto= "moto particular de cualquier marca color y modelo   ";
+        transporte3.atributos= "eficaz en el tiempo, seguro,viaje de una manera cómoda,costo de financiero medio ";
+        
+        System.out.println("si vas a viajar en moto ten encuenta las siguientes caracteristicas: "+transporte3.moto);
+        System.out.println("si vas a viajar en moto ten encuenta los siguientes atributos: "+transporte3.atributos);
+                
+        
+        System.out.println("                                    ");
+        System.out.println("MEDIO DE TRANSPORTE 4 ");
+        transporte transporte4= new transporte();
+        transporte4.metrocable= "  forma semi ovalado,color rojo con negro,no muy espacioso   trasporte publico,accesible para llegar a lugares muy lejanos      ";
+        transporte4.atributos= "  accesible para llegar a lugares muy lejanos viaje de una manera cómoda costo de financiero bajo";
+        
+        System.out.println("si vas a viajar en metrocable ten encuenta las siguientes caracteristicas: "+transporte4.metrocable);
+        System.out.println("si vas a viajar en metrocable ten encuenta los siguientes atributos: "+transporte4.metrocable);
+                
+         
+    }
+}
+
+
