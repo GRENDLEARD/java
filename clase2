@@ -1,0 +1,22 @@
+package paquetito;
+
+/**
+ *
+ * @author salas
+ */
+public class clase2 {
+     public static void main(String [] args){
+     Operacion op = new Operacion ();
+   
+     op.leerNumeros();
+     op.Sumar();
+     op.Resta();
+     op.Multiplicacion();
+     op.Division();
+     op.Sobrante();
+     op.Potencia();
+     op.mostrarResultados();
+     
+     
+    }
+}
