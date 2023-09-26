@@ -1,18 +1,39 @@
 package ClasesYObjetos;
 import javax.swing.JOptionPane;
-public class Main {
-    public static void main(String[] args)
+public class triangulo
+{
+    int lado1;
+    int lado2;
+    int lado3;
+    int isoceles;
+    int equilatero;
+    int escaleno;
+   
+    public void leernumeros()
     {
-        operacion op = new operacion();
+        lado1=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+        lado2=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+        lado3=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+    }  
        
-        op.leernumeros();
-        op.sumar();
-        op.restar();
-        op.multiplicar();
-        op.dividir();
-        op.potencia();
-        op.mostraResultados();
+    public void equilatero(){
+    if (lado1==lado2  &&  lado2==lado3  &&  lado1==lado3)
+    {
+    JOptionPane.showMessageDialog(null,"triangulo equilatero");
+    }
     }
    
+    public void isoceles(){
+     if ((lado1==lado2  &&  lado2!=lado3  &&  lado1!=lado3) || (lado1!=lado2  &&  lado2!=lado3  &&  lado3==lado1) || (lado1!=lado2  &&  lado2==lado3  && lado3!=lado1))
+     {
+     JOptionPane.showMessageDialog(null, "triangulo isoceles");
+     }
+    }
+   
+    public void escaleno(){
+        if(lado1!=lado2  &&  lado2!=lado3  &&  lado1!=lado3)
+        {
+           JOptionPane.showMessageDialog(null, "triangulo escaleno");
+        }
+    }
 }
-
