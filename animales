@@ -1,23 +1,31 @@
 package ClasesYObjetos;
-
-public class animales {
-    String especie;
-    String familia;
-    String caracteristicas;
-    String atributos;
-    
-        public static void main(String []args){
-        animales animal1= new animales();
-        animal1.familia="canidos";
-        animal1.especie= "lobo";
-        animal1.caracteristicas="grandes. peludos. narices. grandes patas. cola. orejas. ojos. ";
-        animal1.atributos="cazadores. audases. siempre estan en manada. se pueden domesticar. carniboros. ";
-        
-        System.out.println("el animal pertence a la familia de los: "+animal1.familia);                                             
-        System.out.println("el animal pertencece a especie: "+animal1.especie);
-        System.out.println("el animal tiene las siguientes caracteristicas: "+animal1.caracteristicas);
-        System.out.println("el animal tiene los siguientes atributos:  "+animal1.atributos);
-             
+import javax.swing.JOptionPane;
+public class cuadrado {
+   
+    int numero1;
+    int numero2;
+    int area;
+    int perimetro;
+   
+    public void leernumeros()
+    {
+        numero1=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+        numero2=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+       
+    }
+     public void area()
+        {
+            area= numero1*numero2;
         }
-           
+       
+        public void perimetro()
+        {
+            perimetro=numero1+numero2;
+        }
+       
+         public void mostraResultados()
+        {
+            System.out.println("El area es:"+area);
+            System.out.println("El perimetro es:"+perimetro);
+        }
 }
