@@ -1,57 +1,31 @@
 package ClasesYObjetos;
-
-public class Coche {
-    String color;
-    String marca;
-    String km;
-    
-        public static void main (String[]args){
-        Coche coche1 = new Coche();
-        coche1.color ="negro";
-        coche1.marca = "bogatti";
-        coche1.km = ("42022");
-        
-         System.out.println("         ");
-        System.out.println("          COCHE 1          ");
-       
-        System.out.println("el color del carro es: "+coche1.color);
-        System.out.println("el marca del carro es: "+coche1.marca);
-        System.out.println("el kilometraje del carro es: "+coche1.km);
-       
-        
-        
-        
-        
-        System.out.println("  ");
-        System.out.println("           COCHE 2          ");
+import javax.swing.JOptionPane;
+public class cuadrado {
    
-        Coche coche2 = new Coche();
-        coche2.color ="blanco";
-        coche2.marca = "Audi";
-        coche2.km = ("0");
-        System.out.println("el color del carro es: "+coche2.color);
-        System.out.println("el marca del carro es: "+coche2.marca);
-        System.out.println("el kilometraje del carro es: "+coche2.km);
-       
-        //*                                        //*
-        
-        
-        System.out.println("");
-        System.out.println("           COCHE 3          ");
+    int numero1;
+    int numero2;
+    int area;
+    int perimetro;
    
-        Coche coche3 = new Coche();
-        coche3.color ="rojo";
-        coche3.marca = "ferrari";
-        coche3.km = ("100");
-        System.out.println("el color del carro es: "+coche3.color);
-        System.out.println("el marca del carro es: "+coche3.marca);
-        System.out.println("el kilometraje del carro es: "+coche3.km);
-
-        
-        
-        
-        
+    public void leernumeros()
+    {
+        numero1=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+        numero2=Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+       
+    }
+     public void area()
+        {
+            area= numero1*numero2;
         }
-  
+       
+        public void perimetro()
+        {
+            perimetro=numero1+numero2;
+        }
+       
+         public void mostraResultados()
+        {
+            System.out.println("El area es:"+area);
+            System.out.println("El perimetro es:"+perimetro);
+        }
 }
-
