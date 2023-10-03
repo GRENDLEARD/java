@@ -1,84 +1,73 @@
 package paquetito;
 
-/**
- *
- * @author SALAS
- */
+import java.util.Random;
 
-  
-public class Persona {
-    
-    String nombre;
-    int edad;
-    String DNI;
-    String Sexo;
-    int Peso;
-    String Altura;
-    
-    
+public final class Persona {
+    public String nombre;
+    public int edad;
+    public String DNI;
+    public String sexo;
+    public int pesoEnKilogramos;
+    public int alturaEnCentimetros;
+
     public Persona() {
-       this. nombre = "David";
-       this. edad = 18;
-       this. DNI = "1058912097";
-       this. Sexo = "Hombre";
-       this. Peso = 60;
-       this. Altura = "1.87";
-    
+        this.nombre = "David";
+        this.edad = 0;
+        this.sexo = "Hombre";
+        this.pesoEnKilogramos = 0;
+        this.alturaEnCentimetros = 0;
+        generarDNI();
     }
-    
-    
-      public Persona(String nombre, int edad,String Sexo) {
-       this. nombre = nombre ;
-       this. edad = edad;
-       this. DNI = "1058912097";
-       this. Sexo = Sexo;
-       this. Peso = 60;
-       this. Altura = "1.87";
-       
-   
-   
+
+    public Persona(String nombre, int edad, String sexo) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.pesoEnKilogramos = 0;
+        this.alturaEnCentimetros = 0;
+        generarDNI();
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     public Persona(String nombre,int edad, String DNI, String Sexo, int Peso, String Altura) {
-       this. nombre = nombre;
-       this. edad = edad;
-       this. DNI = DNI;
-       this. Sexo = Sexo;
-       this. Peso = Peso;
-       this. Altura = Altura;
-       
-   
-   
+
+    public Persona(String nombre, int edad, String DNI, String sexo, int pesoEnKilogramos, int alturaEnCentimetros) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.DNI = DNI;
+        this.sexo = sexo;
+        this.pesoEnKilogramos = pesoEnKilogramos;
+        this.alturaEnCentimetros = alturaEnCentimetros;
     }
-    
-    
-    
-    
-    
-    
-    public void MostrarDatos (){
-        
-        System.out.println ("El nombre es: "+ nombre); 
-        System.out.println ("La edad es: "+ edad); 
-        System.out.println ("El DNI es: "+ DNI ); 
-        System.out.println ("El sexo es: "+ Sexo );
-        System.out.println ("El peso es de: "+ Peso);
-        System.out.println ("La altura es de: "+ Altura);
-        
+
+    public int calcularIMC() {
+        double alturaEnMetros = alturaEnCentimetros / 100.0;
+        double imc = pesoEnKilogramos / (alturaEnMetros * alturaEnMetros);
+        final int DEBAJO_PESO_IDEAL = -1;
+        final int PESO_IDEAL = 0;
+        final int SOBREPESO = 1;
+
+        if (imc < 20) {
+            return DEBAJO_PESO_IDEAL;
+        } else if (imc >= 20 && imc <= 25) {
+            return PESO_IDEAL;
+        } else {
+            return SOBREPESO;
+        }
+               }
+
+    public boolean esMayorDeEdad() {
+        return edad >= 18;
     }
-   
+
+    public void generarDNI() {
+        Random rand = new Random();
+        int numero = rand.nextInt(90000000) + 10000000;
+        DNI = Integer.toString(numero);
+    }
+
     
-    
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + "\nEdad: " + edad + "\nDNI: " + DNI + "\nSexo: " + sexo +
+                "\nPeso: " + pesoEnKilogramos + " kg\nAltura: " + alturaEnCentimetros + " cm";
+    }
+
 }
