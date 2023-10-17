@@ -1,41 +1,20 @@
-public class CompaniaTelefonia {
-    private String nombre;
-    private int minutosIncluidos;
-    private int internetIncluido;
-    private double costoMensual;
+public class Main {
+    public static void main(String[] args) {
+        CompaniaTelefonia claro = new CompaniaTelefonia("Claro", 500, 10, 30.0);
+        CompaniaTelefonia tigoUne = new CompaniaTelefonia("TigoUne", 300, 20, 25.0);
+        CompaniaTelefonia otraCompania = new CompaniaTelefonia("Otra Compañía", 400, 15, 27.5);
 
-    public CompaniaTelefonia(String nombre, int minutosIncluidos, int internetIncluido, double costoMensual) {
-        this.nombre = nombre;
-        this.minutosIncluidos = minutosIncluidos;
-        this.internetIncluido = internetIncluido;
-        this.costoMensual = costoMensual;
+        System.out.println("Información de las compañías de telefonía:");
+        imprimirInformacionCompania(claro);
+        imprimirInformacionCompania(tigoUne);
+        imprimirInformacionCompania(otraCompania);
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double calcularPuntaje(int minutos, int internet, double costoMaximo) {
-        double puntaje = 0.0;
-
-        if (minutos <= minutosIncluidos) {
-            puntaje += 1.0;
-        } else {
-            puntaje += (double) minutosIncluidos / minutos;
-        }
-
-        if (internet <= internetIncluido) {
-            puntaje += 1.0;
-        } else {
-            puntaje += (double) internetIncluido / internet;
-        }
-
-        if (costoMensual <= costoMaximo) {
-            puntaje += 1.0;
-        } else {
-            puntaje += costoMaximo / costoMensual;
-        }
-
-        return puntaje;
+    public static void imprimirInformacionCompania(CompaniaTelefonia compania) {
+        System.out.println("Nombre: " + compania.getNombre());
+        System.out.println("Minutos Incluidos: " + compania.getMinutosIncluidos() + " minutos");
+        System.out.println("Internet Incluido: " + compania.getInternetIncluido() + " GB");
+        System.out.println("Costo Mensual: $" + compania.getCostoMensual());
+        System.out.println();
     }
 }
